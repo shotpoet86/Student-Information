@@ -48,24 +48,24 @@ public class StudentInformation {
 
     //display menu
     private void showMenu() {
-        System.out.println("1. Enter a student name ");
-        System.out.println("2. Enter a course name and a grade");
+        System.out.println("1. Enter Student Name");
+        System.out.println("2. Enter course name and grade");
         System.out.println("3. Display all grades");
-        System.out.println("4. Calculate the average grade");
-        System.out.println("5. Exit program");
+        System.out.println("4. Calculate average grade");
+        System.out.println("5. Exit ");
     }
 
     //display for entering student name
     private void enterName() {
-        System.out.println("Enter the student name");
+        System.out.println("Enter Student Name");
         System.out.println();
         String studentName = scan.nextLine();
-        System.out.println("Student name = " + studentName);
+        System.out.println("Student Name = " + studentName);
     }
 
     //course info display
     private void enterCourses() {
-        System.out.println("Enter 3 subjects and their corresponding grades:");
+        System.out.println("Enter 3 subjects and their corresponding grades.\n" + "You will enter subject first, press enter , then be prompted for grade.");
         System.out.println();
 
         for (int i = 0; i < subjects.length; i++) {
